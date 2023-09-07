@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-[#0D6EFD0D] p-8">
+        <nav class="container mx-auto flex justify-between">
+            <ul>
+                <li><a href="index.html" class="font-bold text-2xl">Hot Gadgets</a></li>
+            </ul>
+            <ul>
+                <li><a href="" class="primary-color text-white px-4 py-2 rounded">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center flex-col tex-container p-20">
+            <h1 class="text-5xl text-center font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="my-4 text-center">There are many variations of passages of Lorem Ipsum available, but the
+                majority<br> have suffered alteration in some form, by injected humou.</p>
+            <a href="" class="primary-color text-white px-4 py-2 rounded">Sign Up</a>
+        </div>
+        <div class="banner-img -mb-[16rem] flex justify-center">
+            <img class="w-2/4" src="./image/header.png" alt="">
+        </div>
+    </header>
+
+    <div class="searc-section mt-[16rem]">
+        <h2 class="text-center text-3xl font-semibold">Search your phone</h2>
+        <div class="flex justify-center mt-4">
+            <input id="serach-field" class="border bg-[#100F0F0D] px-4 border-none w-1/3" type="text"
+                placeholder="Search your phone">
+            <button id="search-btn" href="" class="primary-color text-white px-4 py-2 rounded">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="py-16 container mx-auto">
+        <div>
+            <div id="product-container"
+                class="grid grid-flow-col-1 md:grid-flow-cols-3 lg:grid-cols-4 gap-4 px-1 lg:p-0 md:p-0">
+                <!-- dynamic products show here -->
+            </div>
+            <div id="show-all-container" class="text-center my-8">
+                <button id="show-all-btn" href="" class="primary-color inline-block text-white px-4 py-2 rounded">Show
+                    All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#0D6EFD0D] p-16">
+        <div class="container mx-auto">
+            <div class="flex justify-between border-b-2 pb-4">
+                <ul>
+                    <li><a href="index.html" class="font-bold text-2xl">Hot Gadgets</a></li>
+                    <p>You can definitely work.</p>
+                </ul>
+                <ul>
+                    <li><a href="" class="primary-color text-white px-4 py-2 rounded">Join Premium</a></li>
+                </ul>
+            </div>
+            <div class="footer-link grid grid-cols-4 mt-4">
+                <div class="flex flex-col gap-2">
+                    <a href="">Product</a>
+                    <a href="">Browse jobs</a>
+                    <a href="">Remote jobs</a>
+                    <a href="">Startup jobs</a>
+                    <a href="">Company jobs</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="">Popular</a>
+                    <a href="">UIUX Design</a>
+                    <a href="">Product Design</a>
+                    <a href="">Back-End Developer</a>
+                    <a href="">Front-End Developer</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="">Resource</a>
+                    <a href="">Faq</a>
+                    <a href="">Support</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="">Company</a>
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Career Tips</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- spinner -->
+    <div id="loading-container" class="loading-container">
+        <div class="popup-overlay"></div>
+        <div class="flex justify-center items-center popup-box m-2 py-12 rounded-lg w-[28rem]">
+            <span class="loading loading-spinner loading-md text-white"></span>
+        </div>
+    </div>
+
+
+    <!-- details popup -->
+    <div id="single-product-popup" class="single-product-popup">
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
